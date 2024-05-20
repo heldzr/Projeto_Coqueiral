@@ -34,6 +34,53 @@
             </nav>
         </div>
     </div>
+
+    <div class="slider">
+        <div class="slides">
+        <!--
+        <input type="radio" name="radio_btn" id="radio1">
+        <input type="radio" name="radio_btn" id="radio2">
+        <input type="radio" name="radio_btn" id="radio3">
+        <input type="radio" name="radio_btn" id="radio4">
+        
+         -->
+
+        <div class="slide first">
+            <img src="imagens/picture4.png" alt="Bem vindos a coqueiral" />
+        </div>
+        <div class="slide">
+            <img src="imagens/picture2.png" alt="Coleção Ki Calor" />
+        </div>
+        <div class="slide">
+            <img src="imagens/picture3.png" alt="Feliz dia do cliente!" />
+        </div>
+        <div class="slide">
+            <img src="imagens/picture4.png" alt="Confira nossa nova coleção" />
+        </div>
+         
+        <!--
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        -->
+     </div>
+
+        <!--
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+        -->
+  </div>
+
+
   <div class="search-container">
     <div class="search-content">
         <input type="text" id="search" placeholder="Pesquise o que você procura...">
