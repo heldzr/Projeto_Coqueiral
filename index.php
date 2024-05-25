@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INÍCIO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/index.css">
     <script src="https://kit.fontawesome.com/b09944a1ea.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>

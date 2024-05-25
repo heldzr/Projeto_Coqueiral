@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header-inner-content {
+    max-width: 1300px;
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  .navbar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    position: sticky; /*mantém o navbar em cima */
+    top: 0;
+    box-shadow: 10px 0px 10px #f0f0f0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  
+  navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 40px; /* Ajuste conforme necessário */
+    width: auto; /* Ajuste conforme necessário */
+    margin-right: 50px; /* Espaçamento entre a logo e os itens do menu */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon-container img {
+    position: fixed;
+    top: 10px; /* ajuste conforme necessário */
+    right: 10px; /* ajuste conforme necessário */
+    cursor: pointer;
+  }
+  
+  .nav-icon-container img:first-child {
+    margin-right: 1rem;
+  }
+  
+  nav ul li {
+    color: #838383;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  .ajuda {
+    margin-right: 50px !important; 
+    margin-top: 10px;
+  }
+  .perfil {
+    margin-right: 200px;
+    margin-top: 14px;
+  }
+  .notificacao {
+    margin-right: 150px;
+    margin-top: 15px;
+  }
+  
+  .sacola {
+    margin-right: 90px;
+    margin-top: 10px;
+  }
+
+
+/* ... */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .menu-button {
+        display: block;
+    }
+    .header-inner-content {
+      display: none;
+  }
+  
+    .header-inner-content {
+        display: none;
+        position: absolute;
+        top: 80px; /* Altura do navbar */
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+  }
+  
+    @media only screen and (max-width: 900px) {
+      .show-menu {
+          display: block !important;
+      }
+  
+  
+    .nav-icon-container img {
+        display: block;
+    }
+  
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+       
+    }
+  
+    nav ul li {
+        margin-bottom: 1rem;
+        transform: translateY(-5px);
+        transition: all 0.2s;
+        font-weight: bold;
+    }
+    }
+
+
+.generals {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .toggle{
+    display: none;
+  }
+  
+  
+  .containers1 {
+    display: flex;
+    flex-direction: column;   
+    margin-bottom: 350px; 
+  }
+  
+  
+  .profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;        
+  }
+  
+  
+  
+  .profileIcons {
+    font-size: 100px;
+  }
+  
+  
+  
+  .profileInfos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding-bottom: 25px;
+  }
+  
+  
+  
+  .profileInfos h3 {
+    font-size: 35px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+  }
+  
+  
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    font-size: 25px;
+  }
+  
+  
+  
+  .icons p {
+    font-size: 15px;
+    margin-left: 5px;  
+  }
+  
+  
+  
+  .iconLinks {
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  .containers2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: #F5F7F9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  
+  
+  
+  .formGroups {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  
+  
+  .formGroups h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  .personalInfos {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  
+  .profileInfosA {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  
+  
+  
+  .profileInfosB {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  
+  
+  
+  .profileInfosB p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  
+  .adressInfos {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .adressInfosA {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  
+  
+  
+  .adressInfosB {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  
+  
+  
+  .accountInput{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 15px; 
+    box-sizing: border-box; 
+    padding: 5px; 
+  }
+  
+  
+  
+  
+  .formGroups button {
+    color: white; 
+    background-color: #303D4D; 
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .deleteAccount{
+    width: 100%;
+  }
+  
+  .deleteAccount p{
+   text-align:end;
+   margin-bottom: 20px;
+   color: red;
+   text-decoration: underline;
+   
+  }
+  
+  .inputToggle{
+    display: none;
+  }
+  
+  .iconLinks{
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 1519px) {
+  
+    .generals{
+      justify-content: center;
+    }
+  
+  
+  
+    
+  
+    .containers1{ 
+      height: 100%;
+      transition: 0.5s ease; 
+      transform: translateX(-250px);
+      display: none;
+      
+      
+     
+    }
+  
+    .containers2{
+      width: 70%;
+      z-index: 0;
+      margin-right: 0px;
+      
+  
+    }
+  
+    .inputToggle{
+      position: fixed;
+      opacity: 0;
+      z-index: 3;
+      top: 100px;
+      left: 150px;
+      transform: scale(1.5);
+      display: flex !important;
+      
+    }
+  
+    .toggle{
+      position: fixed;
+      top: 92px;
+      left: 141px;
+      height: 30px;
+      width: 30px;
+      background-color: white;
+      z-index: 2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      display: flex !important;
+    }
+  
+    .toggle .common {
+      position: absolute;
+      height: 2px;
+      width: 20px;
+      border-radius: 50px;
+      background-color: #333;
+      transition: 0,3s ease;
+    }
+  
+    .toggle .top_line{
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .toggle .middle_line{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .toggle .bottom_line{
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .inputToggle:checked ~ .toggle .top_line{
+      left:2px;
+      top: 14px;
+      width: 25px;
+      transform: rotate(45deg);
+    }
+  
+    .inputToggle:checked ~ .toggle .bottom_line{
+      left:2px;
+      top: 14px;
+      width: 25px;
+      transform: rotate(-45deg);
+    }
+  
+    .inputToggle:checked ~ .toggle .middle_line{
+      opacity: 0;
+      transform: translateX(20px);
+    }
+  
+    .inputToggle:checked ~ .containers1{
+     transform: translateX(0);
+     z-index: 1;
+     position: absolute;
+     background-color: white;
+     top: 70px;
+     left: 10px;
+     height: 95%;
+     margin-top: 10px;
+     display: flex !important;
+     
+    }
+  
+    .inputToggle:checked ~ .containers2{
+      width: 70%;
+    
+     }
+  
+     .accountInput{
+      width: 250px;
+     }
+  
+     .inputToggle:checked ~ .profiles{
+      margin-top: 500px;
+     }
+  
+     .profiles{
+      padding-top: 20px;
+     }
+     
+  
+     
+    
+  }
+  
+  @media screen and (max-width: 842px) {
+    .personalInfos, .adressInfos {
+      flex-direction: column;
+  }
+  
+  .profileInfosA, .profileInfosB, .adressInfosA, .adressInfosB {
+      margin: auto;
+  }
+  
+  .containers1{
+    margin: 0px;
+  }
+  
+  .containers2{
+    width: 70%;
+    margin-right: 0px;
+    
+  }
+  
+  .containers1{
+   
+    display: none;
+   }
+  
+   .inputToggle:checked ~ .containers1{
+    transform: translateX(0);
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 10px;
+    height: 100%;
+    margin-top: -20px;
+    display: flex !important;
+    
+   }
+  
+   .inputToggle:checked ~ .containers2{
+    width: 70%;
+    margin-right: 0px;
+  
+   }
+  
+   .profiles{
+    padding-top: 60px;
+   }
+  
+  }
+  
+  
+footer .geral {
+    text-align: center; 
+  }
+  
+  footer h4{ 
+    margin: 10px; color: #303D4D; 
+  } 
+  
+  footer p{ 
+    color: #557193;   
+  }
+  

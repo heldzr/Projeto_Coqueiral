@@ -193,11 +193,7 @@ nav ul li:hover {
 
 
 
-footer .geral {
-   text-align: center; }
-    footer h4{ margin: 10px; color: #303D4D; 
-    } footer p{ color: #557193;   
-   }
+
    .search-container {
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
@@ -270,12 +266,13 @@ footer .geral {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 99;
   }
+}
 
   @media only screen and (max-width: 900px) {
     .show-menu {
         display: block !important;
     }
-}
+
 
   .nav-icon-container img {
       display: block;
@@ -294,7 +291,8 @@ footer .geral {
       transition: all 0.2s;
       font-weight: bold;
   }
-}
+  }
+
 /* ... */
 /* ... */
 /* ... */
@@ -377,8 +375,21 @@ footer .geral {
 }
 
 .menu-button {
-  position: fixed; /* Posição fixa em relação à janela de visualização */
-  top: 20px; /* Distância do topo */
-  right: 20px; /* Distância da direita */
-  z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 1000;
+}
+
+
+footer .geral {
+  text-align: center; 
+}
+
+footer h4{ 
+  margin: 10px; color: #303D4D; 
+} 
+
+footer p{ 
+  color: #557193;   
 }
