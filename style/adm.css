@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -161,179 +162,124 @@ body {
     }
     }
 
-
-.generals {
+ .admin-section {
     display: flex;
     flex-direction: row;  
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
-  }
-  
-  .toggle{
-    display: none;
-  }
-  
-  
-  .containers1 {
-    display: flex;
-    flex-direction: column;   
-    margin-bottom: 350px; 
-  }
-  
-  
-  .profiles {
-    display: flex;
-    flex-direction: row;
-    align-items: center;        
-  }
-  
-  
-  
-  .profileIcons {
-    font-size: 100px;
-  }
-  
-  
-  
-  .profileInfos {
+}
+
+    .toggle{
+        display: none;
+      }
+      
+      
+      .adm_container {
+        display: flex;
+        flex-direction: column;   
+        margin-bottom: 250px; 
+      }
+      
+      
+      .profiles {
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+      }
+      
+      
+      
+      .profileIcons {
+        font-size: 100px;
+      }
+      
+      
+      
+      .profileInfos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding-bottom: 25px;
+      }
+      
+      
+      
+      .profileInfos h3 {
+        font-size: 35px;
+        padding-left: 5px;
+        margin-bottom: 0px;
+      }
+      
+      
+      
+      .icons {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      
+      
+      
+      .icons p {
+        font-size: 15px;
+        margin-left: 5px;  
+      }
+      
+      
+      
+      .iconLinks {
+        text-decoration: none;
+        color: black;
+      }
+
+    .inputToggle{
+        display: none;
+    }
+
+
+
+.form_container{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding-bottom: 25px;
-  }
-  
-  
-  
-  .profileInfos h3 {
-    font-size: 35px;
-    padding-left: 5px;
-    margin-bottom: 0px;
-  }
-  
-  
-  
-  .icons {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-    margin-left: 25px;
-    font-size: 25px;
-  }
-  
-  
-  
-  .icons p {
-    font-size: 15px;
-    margin-left: 5px;  
-  }
-  
-  
-  
-  .iconLinks {
-    text-decoration: none;
-    color: black;
-  }
-  
-  
-  .containers2 {
-    display: flex;
-    flex-direction: column;
+    width: 40%;
     justify-content: center;
     align-items: center;
-    width: 45%;
     background-color: #F5F7F9;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 600px;
     border-radius: 20px;
-  }
-  
-  
-  
-  .formGroups {
+    margin: 30px 0px 30px;
+}
+
+.form_container h1{
+    margin: 20px 0px 20px;
+}
+
+.info_container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  
-  
-  .formGroups h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  
-  
-  .personalInfos {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
-  
-  .profileInfosA {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-  }
-  
-  
-  
-  .profileInfosB {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-  
-  
-  
-  .profileInfosB p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 10px;
-    text-decoration: underline;
-    font-weight: 500;
-  }
-  
-  
-  .adressInfos {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
-  .adressInfosA {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-  }
-  
-  
-  
-  .adressInfosB {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-  
-  
-  
-  .accountInput{
-    width: 300px;
+}
+
+.info_input{
+    width: 400px;
     height: 35px;
     border: 1px solid #ccc; 
     border-radius: 4px;
     font-size: 15px; 
     box-sizing: border-box; 
     padding: 5px; 
+    margin: 5px 0px 5px;
   }
-  
-  
-  
-  
-  .formGroups button {
+
+#DescProduto{
+    height: 50px;
+}
+
+  .form_btn button{
+    cursor: pointer;
     color: white; 
     background-color: #303D4D; 
     width: 100px;
@@ -344,49 +290,41 @@ body {
     font-weight: bold;
     font-size: 17px;
   }
-  
-  .deleteAccount{
-    width: 100%;
+
+  .form_btn button:hover{
+   font-size: 20px;
+  }
+
+  footer .geral {
+    text-align: center; 
   }
   
-  .deleteAccount p{
-   text-align:end;
-   margin-bottom: 20px;
-   color: red;
-   text-decoration: underline;
-   
-  }
+  footer h4{ 
+    margin: 10px; color: #303D4D; 
+  } 
   
-  .inputToggle{
-    display: none;
+  footer p{ 
+    color: #557193;   
   }
-  
-  .iconLinks{
-    font-weight: bold;
-    text-decoration: none;
-  }
+
   
   @media screen and (max-width: 1519px) {
   
-    .generals{
+    .admin-section{
       justify-content: center;
     }
     
-    .containers1{ 
+    .adm_container{ 
       height: 100%;
       transition: 0.5s ease; 
-      transform: translateX(-250px);
       display: none;
-      
-      
+        
      
     }
   
-    .containers2{
-      width: 70%;
-      z-index: 0;
-      margin-right: 0px;
-      
+    .form_container{
+      width: 60%;
+      z-index: 0;  
   
     }
   
@@ -459,21 +397,21 @@ body {
       transform: translateX(20px);
     }
   
-    .inputToggle:checked ~ .containers1{
+    .inputToggle:checked ~ .adm_container{
      transform: translateX(0);
      z-index: 1;
      position: absolute;
      background-color: white;
      top: 70px;
      left: 10px;
-     height: 95%;
+     height: 82%;
      margin-top: 10px;
      display: flex !important;
      
     }
   
-    .inputToggle:checked ~ .containers2{
-      width: 70%;
+    .inputToggle:checked ~ .form_container{
+      width: 60%;
     
      }
   
@@ -487,72 +425,129 @@ body {
   
      .profiles{
       padding-top: 20px;
+      
+     }
+
+     .profileIcons{
+        font-size: 60px;
      }
      
+     .profileInfos h3{
+        font-size: 25px;
+        margin-top: 20px;
+     }
   
      
     
   }
-  
-  @media screen and (max-width: 842px) {
-    .personalInfos, .adressInfos {
-      flex-direction: column;
+
+  @media screen and (max-width: 742px){
+
+    .info_input{
+        width: 250px;
+    }
+
   }
-  
-  .profileInfosA, .profileInfosB, .adressInfosA, .adressInfosB {
-      margin: auto;
+
+
+
+
+
+/*
+.info_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.formGroups{
+    width: 80%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
   }
+
+.formGroups h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+/*
+.adminLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.adminInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formButtons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.formButtons button {
+  color: white;
+  background-color: #303d4d;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
   
-  .containers1{
-    margin: 0px;
+
+  
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .containers2{
-    width: 70%;
-    margin-right: 0px;
-    
+
+  .menu-button {
+    display: block;
   }
-  
-  .containers1{
-   
+
+  .header-inner-content {
     display: none;
-   }
-  
-   .inputToggle:checked ~ .containers1{
-    transform: translateX(0);
-    z-index: 1;
     position: absolute;
-    background-color: white;
-    top: 70px;
-    left: 10px;
-    height: 100%;
-    margin-top: -20px;
-    display: flex !important;
-    
-   }
-  
-   .inputToggle:checked ~ .containers2{
-    width: 70%;
-    margin-right: 0px;
-  
-   }
-  
-   .profiles{
-    padding-top: 60px;
-   }
-  
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
   }
-  
-  
-footer .geral {
-    text-align: center; 
+
+  .header-inner-content.show-menu {
+    display: block !important;
   }
-  
-  footer h4{ 
-    margin: 10px; color: #303D4D; 
-  } 
-  
-  footer p{ 
-    color: #557193;   
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
-  
+
+  .nav-icon-container {
+    margin-top: 10px;
+  }
+
+  .admin-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
