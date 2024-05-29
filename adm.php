@@ -17,7 +17,19 @@ include('dbEnviar.php');
 </head>
 <body>
 
-<h1><?php echo $msg; ?></h1>
+<?php 
+
+if (isset($_GET['success'])) {
+    echo '<h1>Produto adicionado com sucesso!</h1>';
+}
+if (isset($_GET['deleted'])) {
+    echo '<h1>Produto deletado com sucesso!</h1>';
+}
+if (isset($_GET['error'])) {
+    echo '<h1>Produto não encontrado!</h1>';
+}
+
+?>
 
 <div class="navbar">
     <img src="imagens/logo.png" alt="logo coqueiral" class="logo">
@@ -80,7 +92,7 @@ include('dbEnviar.php');
 
     <div class="form_container">
         <form method="post" enctype="multipart/form-data" class="form_container">
-            <h1>Adicionar Produtos</h1>
+            <h1>PRODUTOS</h1>
             <div class="info_container">
                 <label for="nomeProduto">Nome do Produto*</label>
                 <input type="text" name="nomeProduto" class="info_input" required>
@@ -91,18 +103,29 @@ include('dbEnviar.php');
                 <label for="DescProduto">Descrição do Produto</label>
                 <textarea name="DescProduto" id="DescProduto" placeholder="Exemplo: Conjunto Verão Feminino"></textarea>
 
-                <label for="nomeLoja">Nome da Loja*</label>
-                <input type="text" name="nomeLoja" class="info_input" required>
+                <label for="codigoProduto">Código do Produto*</label>
+                <input type="number" name="codigoProduto" id="codigoProduto" class="info_input" required>
 
                 <label for="preco">Preço do Produto*</label>
                 <input type="number" name="preco" class="info_input" required>
+               
+                <label for="nomeLoja">Nome da Loja*</label>
+                <input type="text" name="nomeLoja" class="info_input" required>
 
                 <label for="linkLoja">Link para a Loja*</label>
                 <input type="url" name="linkLoja" class="info_input">
             </div>
 
             <div class="form_btn">
-                <button type="submit" name="adm_btn">Salvar</button>
+                <div class="add_btn">
+                    <button type="submit" name="add_btn">Adicionar</button>
+                </div>
+
+                <div class="dlt_btn">
+                    <button type="submit" name="dlt_btn">Deletar</button>
+                </div>
+                
+                
             </div>
         </form>
     </div>
